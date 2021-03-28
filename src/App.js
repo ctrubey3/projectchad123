@@ -11,6 +11,7 @@ import Games from "./Components/Pages/Games";
 import Television from "./Components/Pages/Television";
 
 import Funk1 from "./Funkpops/Funk1";
+import Vegeta from "./Funkpops/Vegeta";
 
 
 
@@ -34,9 +35,7 @@ class App extends Component {
             category.name.toLowerCase().includes(this.state.search.toLowerCase())
         )
     }
-    handleClearList = () => {
-        this.setState({ search: '' })
-    }
+
 
 
 
@@ -51,6 +50,7 @@ class App extends Component {
                         <Route exact path={"/Games"} component={Games}/>
                         <Route exact path={"/Television"} component={Television}/>
                         <Route exact path={"/Funk1"} component={Funk1}/>
+                        <Route exact path={"/Vegeta"} component={Vegeta}/>
                         <Box getFilterData={this.getFilterData}/>
                     </Switch>
                 </div>

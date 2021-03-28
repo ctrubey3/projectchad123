@@ -2,6 +2,11 @@ import {data} from "../../data";
 import {v4 as uuidv1} from "uuid";
 import {Component} from "react";
 import Box from "../Box";
+import {Link} from "react-router-dom"
+
+
+
+
 class All extends Component {
     state = {
         data: data,
@@ -27,12 +32,10 @@ class All extends Component {
 
     render(){
         return(
-
             <div className="App">
-                <Box getFilterData={this.getFilterData}/>
+                <Link  className= "App" to={"/Funk1"}>   <Box getFilterData={this.getFilterData}/></Link>
+
             </div>
-
-
         )
     }}
 

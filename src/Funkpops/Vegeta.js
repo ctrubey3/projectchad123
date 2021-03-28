@@ -3,8 +3,7 @@ import {v4 as uuidv1} from "uuid";
 import {Component} from "react";
 import Box from "../Components/Box";
 import {Link} from "react-router-dom";
-
-class Funk1 extends Component {
+class Vegeta extends Component {
     state = {
         data: data,
         name: '',
@@ -17,30 +16,22 @@ class Funk1 extends Component {
     }
 
 
-
-
-
-
     getFilterData = () => {
         return this.state.data.filter(item =>
-            item.name.includes("Goku")
-
-        )
-    }
-
-
+            item.name.includes("Vegeta")
+        )}
 
 
 
 
     render(){
         return(
-                 <div className="App">
-                     <Link to="/">Go back</Link>
+            <div className="App2">
+                <Link to="/">Go back</Link>
                 <Box getFilterData={this.getFilterData}/>
 
             </div>
         )
     }}
 
-export default Funk1;
+export default Vegeta;
